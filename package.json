@@ -1,0 +1,30 @@
+{
+  "name": "arquiteturanodejs",
+  "version": "1.0.0",
+  "description": "Modelo de arquitetura de projetos NodeJs",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IGBxDev/homecaresystem-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IGBxDev/homecaresystem-backend/issues"
+  },
+  "homepage": "https://github.com/IGBxDev/homecaresystem-backend#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/typescript": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
