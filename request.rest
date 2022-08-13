@@ -24,3 +24,7 @@ Content-Type: application/json
     "numeroConselho": "000000010082022",
     "regiao": "Norte"
 }
+
+###
+GET http://localhost:3003/paciente/findAll
+Content-Type: application/json
