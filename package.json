@@ -2,11 +2,10 @@
   "name": "arquiteturanodejs",
   "version": "1.0.0",
   "description": "Modelo de arquitetura de projetos NodeJs",
-  "main": "./build/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/index.js",
-    "dev": "ts-node-dev ./src/index.ts",
+    "start": "node build/server.js",
+    "dev": "ts-node-dev ./src/server.ts",
     "postinstall": "tsc"
   },
   "repository": {
