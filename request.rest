@@ -1,0 +1,26 @@
+
+###
+POST http://localhost:3003/paciente/create
+Content-Type: application/json
+
+{
+    "nameComplete": "Robson Rodrigues Ribeiro",
+    "cellphone": "(11) 98286-3916",
+    "contaBancaria":[{    
+        "tipo": "Conta corrente",
+        "numeroConta": "0715372-4",
+        "agencia": "0545",
+        "banco": "Bradesco",
+        "codigoBanco": "237"}],
+    "cpf": "341.899.578-01",
+    "email": "projetos.r@hotmail.com",
+    "endereco": [{
+        "cep": "02649010",
+        "bairro": "Jardim Peri",
+        "numero": "60",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "complemento": "Casa 3" }],
+    "numeroConselho": "000000010082022",
+    "regiao": "Norte"
+}
