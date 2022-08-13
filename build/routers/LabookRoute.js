@@ -9,4 +9,3 @@ const LabookController_1 = require("../controller/LabookController");
 exports.laBookRouter = express_1.default.Router();
 const laBookController = new LabookController_1.LabookController();
 exports.laBookRouter.post("/create", laBookController.create);
-//# sourceMappingURL=LabookRoute.js.map

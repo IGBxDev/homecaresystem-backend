@@ -11,4 +11,3 @@ const amizadeController = new AmizadeController_1.AmizadeController();
 exports.amizadeRouter.post('/create', amizadeController.createAmizade);
 exports.amizadeRouter.get('/all', amizadeController.allAmizade);
 exports.amizadeRouter.delete('/:id', amizadeController.deleteAmizade);
-//# sourceMappingURL=AmizadeRoute.js.map

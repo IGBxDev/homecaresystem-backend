@@ -68,4 +68,3 @@ class AmizadeDatabase extends BaseDatabase_1.BaseDatabase {
     }
 }
 exports.AmizadeDatabase = AmizadeDatabase;
-//# sourceMappingURL=AmizadeDatabase.js.map

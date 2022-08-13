@@ -8,4 +8,3 @@ class InvalidEmail extends CustomError_1.CustomError {
     }
 }
 exports.InvalidEmail = InvalidEmail;
-//# sourceMappingURL=InvalidEmail.js.map

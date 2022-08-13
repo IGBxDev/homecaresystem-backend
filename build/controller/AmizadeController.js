@@ -54,4 +54,3 @@ class AmizadeController {
     }
 }
 exports.AmizadeController = AmizadeController;
-//# sourceMappingURL=AmizadeController.js.map

@@ -8,4 +8,3 @@ class InvalidName extends CustomError_1.CustomError {
     }
 }
 exports.InvalidName = InvalidName;
-//# sourceMappingURL=InvalidaName.js.map

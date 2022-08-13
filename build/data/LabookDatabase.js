@@ -27,4 +27,3 @@ class LabookDatabase extends BaseDatabase_1.BaseDatabase {
 }
 exports.LabookDatabase = LabookDatabase;
 LabookDatabase.TABLE_NAME = "labook_users";
-//# sourceMappingURL=LabookDatabase.js.map

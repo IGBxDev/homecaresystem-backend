@@ -8,4 +8,3 @@ class InvalidRequest extends CustomError_1.CustomError {
     }
 }
 exports.InvalidRequest = InvalidRequest;
-//# sourceMappingURL=InvalidRequest.js.map

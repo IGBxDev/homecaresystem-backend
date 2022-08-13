@@ -10,4 +10,3 @@ const validadeId = (id) => {
     return (0, uuid_1.validate)(id);
 };
 exports.validadeId = validadeId;
-//# sourceMappingURL=generateId.js.map

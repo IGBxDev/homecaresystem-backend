@@ -20,4 +20,3 @@ BaseDatabase.connection = (0, knex_1.default)({
         database: process.env.DATABASE_NAME,
     }
 });
-//# sourceMappingURL=BaseDatabase.js.map

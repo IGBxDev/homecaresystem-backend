@@ -30,4 +30,3 @@ class UserDatabase extends BaseDatabase_1.BaseDatabase {
     }
 }
 exports.UserDatabase = UserDatabase;
-//# sourceMappingURL=UserDatabase.js.map

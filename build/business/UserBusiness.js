@@ -38,4 +38,3 @@ class UserBusiness {
     }
 }
 exports.UserBusiness = UserBusiness;
-//# sourceMappingURL=UserBusiness.js.map

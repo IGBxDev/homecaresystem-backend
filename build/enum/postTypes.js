@@ -6,4 +6,3 @@ var POST_TYPES;
     POST_TYPES["NORMAL"] = "normal";
     POST_TYPES["EVENT"] = "event";
 })(POST_TYPES = exports.POST_TYPES || (exports.POST_TYPES = {}));
-//# sourceMappingURL=postTypes.js.map

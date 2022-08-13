@@ -64,4 +64,3 @@ class PacienteController {
     }
 }
 exports.PacienteController = PacienteController;
-//# sourceMappingURL=PacienteController.js.map

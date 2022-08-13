@@ -30,4 +30,3 @@ class LabookBusiness {
     }
 }
 exports.LabookBusiness = LabookBusiness;
-//# sourceMappingURL=LabookBusiness.js.map

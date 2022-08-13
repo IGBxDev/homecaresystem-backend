@@ -9,4 +9,3 @@ const UserController_1 = require("../controller/UserController");
 exports.userRouter = express_1.default.Router();
 const userController = new UserController_1.UserController();
 exports.userRouter.post('/create', userController.createUser);
-//# sourceMappingURL=userRouter.js.map

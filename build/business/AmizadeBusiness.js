@@ -60,4 +60,3 @@ class AmizadeBusiness {
     }
 }
 exports.AmizadeBusiness = AmizadeBusiness;
-//# sourceMappingURL=AmizadeBusiness.js.map

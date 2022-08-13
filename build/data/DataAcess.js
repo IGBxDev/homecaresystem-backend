@@ -21,4 +21,3 @@ class DataAcess {
 }
 DataAcess.connect();
 module.exports = DataAcess;
-//# sourceMappingURL=DataAcess.js.map

@@ -54,4 +54,3 @@ class Migrations extends BaseDatabase_1.BaseDatabase {
 }
 const migrations = new Migrations();
 migrations.createScript();
-//# sourceMappingURL=migrations.js.map

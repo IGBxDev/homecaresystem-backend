@@ -9,4 +9,3 @@ var REGION_TYPES;
     REGION_TYPES["SUDESTE"] = "Regi\u00E3o Sudeste";
     REGION_TYPES["SUL"] = "Regi\u00E3o Sul";
 })(REGION_TYPES = exports.REGION_TYPES || (exports.REGION_TYPES = {}));
-//# sourceMappingURL=Region.js.map

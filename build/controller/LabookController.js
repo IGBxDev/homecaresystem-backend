@@ -27,4 +27,3 @@ class LabookController extends ValidityState {
     }
 }
 exports.LabookController = LabookController;
-//# sourceMappingURL=LabookController.js.map

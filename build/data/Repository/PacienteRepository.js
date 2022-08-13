@@ -7,4 +7,3 @@ const PacienteSchema_1 = __importDefault(require("../Schemas/PacienteSchema"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const PacienteRepository = mongoose_1.default.model("Pacientes", PacienteSchema_1.default, "Pacientes");
 exports.default = PacienteRepository;
-//# sourceMappingURL=PacienteRepository.js.map

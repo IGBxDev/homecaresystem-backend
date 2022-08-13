@@ -52,4 +52,3 @@ class PostDatabase extends BaseDatabase_1.BaseDatabase {
     }
 }
 exports.PostDatabase = PostDatabase;
-//# sourceMappingURL=PostDatabase.js.map

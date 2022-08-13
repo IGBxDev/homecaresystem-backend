@@ -11,4 +11,3 @@ const postController = new PostController_1.PostController();
 exports.postRouter.post('/create', postController.createPost);
 exports.postRouter.get('/:id', postController.findPostById);
 exports.postRouter.get('/findPostFriendsByUserId/:id', postController.findPostFriendsByUserId);
-//# sourceMappingURL=postRouter.js.map

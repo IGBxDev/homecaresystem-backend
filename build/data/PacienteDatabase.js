@@ -35,4 +35,3 @@ class PacienteDatabase {
     }
 }
 exports.PacienteDatabase = PacienteDatabase;
-//# sourceMappingURL=PacienteDatabase.js.map

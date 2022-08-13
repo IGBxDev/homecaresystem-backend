@@ -34,4 +34,3 @@ class PacienteBusiness {
     }
 }
 exports.PacienteBusiness = PacienteBusiness;
-//# sourceMappingURL=PacienteBusiness.js.map

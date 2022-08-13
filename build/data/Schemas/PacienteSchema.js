@@ -15,4 +15,3 @@ const PacienteSchema = new mongoose_1.default.Schema({
     contaBancaria: []
 });
 exports.default = PacienteSchema;
-//# sourceMappingURL=PacienteSchema.js.map
