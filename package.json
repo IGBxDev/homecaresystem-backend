@@ -4,9 +4,7 @@
   "description": "Modelo de arquitetura de projetos NodeJs",
   "main": "./src/server.ts",
   "scripts": {
-    "start": "tsc && node ./build/server.js",
-    "dev": "ts-node-dev ./src/server.ts",
-    "postinstall": "tsc",
+    "start": "node ./build/server.js",
     "build": "tsc"
   },
   "repository": {
