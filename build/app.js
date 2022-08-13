@@ -10,11 +10,13 @@ const postRouter_1 = require("./routers/postRouter");
 const AmizadeRoute_1 = require("./routers/AmizadeRoute");
 const DataAcess_1 = __importDefault(require("./data/DataAcess"));
 const PacienteRoute_1 = require("./routers/PacienteRoute");
+const dotenv_1 = __importDefault(require("dotenv"));
 /**************************** CONFIG ******************************/
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({ origin: "*", credentials: true })); //define que qualquer url pode acessar essa api
 /**************************** CONNECTION ******************************/
+dotenv_1.default.config();
 DataAcess_1.default.connect();
 /**************************** ENDPOINTS ******************************/
 app.use('/user', userRouter_1.userRouter);

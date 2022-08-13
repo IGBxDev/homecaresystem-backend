@@ -8,12 +8,15 @@ import DataAcess from "./data/DataAcess"
 import { pacienteRouter } from "./routers/PacienteRoute"
 
 
+
 /**************************** CONFIG ******************************/
 const app = express()
 app.use(express.json())
 app.use(cors({origin: "*", credentials: true})) //define que qualquer url pode acessar essa api
 
+
 /**************************** CONNECTION ******************************/
+
 DataAcess.connect()
 
 /**************************** ENDPOINTS ******************************/

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import Constants from "../config/constants/Constants";
+import dotenv from 'dotenv'
 
 class DataAcess{
     static mongooseInstance: any;
@@ -16,7 +17,7 @@ class DataAcess{
         this.mongooseConnection.once("open", ()=>{
             console.log("Conectado ao mongoodb >>>>>>>>>>")
         })
-
+        mongoose.Promise = global.Promise
         this.mongooseInstance = mongoose.connect(Constants.DB_CONNECTION_STRING)
         return this.mongooseInstance;
     }
