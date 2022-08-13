@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+exports.amizadeRouter = void 0;
+var express_1 = require("express");
+var AmizadeController_1 = require("../controller/AmizadeController");
+exports.amizadeRouter = express_1["default"].Router();
+var amizadeController = new AmizadeController_1.AmizadeController();
+exports.amizadeRouter.post('/create', amizadeController.createAmizade);
+exports.amizadeRouter.get('/all', amizadeController.allAmizade);
+exports.amizadeRouter["delete"]('/:id', amizadeController.deleteAmizade);

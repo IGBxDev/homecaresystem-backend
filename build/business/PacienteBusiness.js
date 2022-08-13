@@ -8,17 +8,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PacienteDatabase = void 0;
-const PacienteRepository_1 = __importDefault(require("./Repository/PacienteRepository"));
-class PacienteDatabase {
+exports.PacienteBusiness = void 0;
+const PacienteDatabase_1 = require("../data/PacienteDatabase");
+class PacienteBusiness {
     constructor() {
-        this.create = (paciente) => __awaiter(this, void 0, void 0, function* () {
+        this.create = (input) => __awaiter(this, void 0, void 0, function* () {
             try {
-                return yield PacienteRepository_1.default.create(paciente);
+                const pacienteDatabase = new PacienteDatabase_1.PacienteDatabase();
+                return yield pacienteDatabase.create(input);
             }
             catch (error) {
                 return error;
@@ -26,7 +24,8 @@ class PacienteDatabase {
         });
         this.findAll = () => __awaiter(this, void 0, void 0, function* () {
             try {
-                return yield PacienteRepository_1.default.find();
+                const pacienteDatabase = new PacienteDatabase_1.PacienteDatabase();
+                return yield pacienteDatabase.findAll();
             }
             catch (error) {
                 return error;
@@ -34,5 +33,5 @@ class PacienteDatabase {
         });
     }
 }
-exports.PacienteDatabase = PacienteDatabase;
-//# sourceMappingURL=PacienteDatabase.js.map
+exports.PacienteBusiness = PacienteBusiness;
+//# sourceMappingURL=PacienteBusiness.js.map

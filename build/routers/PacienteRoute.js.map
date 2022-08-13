@@ -1,0 +1,1 @@
+{"version":3,"file":"PacienteRoute.js","sourceRoot":"","sources":["../../src/routers/PacienteRoute.ts"],"names":[],"mappings":";;;;;;AAAA,sDAA8B;AAC9B,yEAAsE;AAEzD,QAAA,cAAc,GAAG,iBAAO,CAAC,MAAM,EAAE,CAAA;AAE9C,MAAM,kBAAkB,GAAG,IAAI,uCAAkB,EAAE,CAAA;AAEnD,sBAAc,CAAC,IAAI,CAAC,SAAS,EAAE,kBAAkB,CAAC,MAAM,CAAC,CAAA;AACzD,sBAAc,CAAC,GAAG,CAAC,UAAU,EAAE,kBAAkB,CAAC,OAAO,CAAC,CAAA"}

@@ -13,7 +13,7 @@ class DataAcess {
             return this.mongooseInstance;
         this.mongooseConnection = mongoose_1.default.connection;
         this.mongooseConnection.once("open", () => {
-            console.log("Conectado ao mongoodb");
+            console.log("Conectado ao mongoodb >>>>>>>>>>");
         });
         this.mongooseInstance = mongoose_1.default.connect(Constants_1.default.DB_CONNECTION_STRING);
         return this.mongooseInstance;
