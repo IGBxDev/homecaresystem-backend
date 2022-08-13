@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Modelo de arquitetura de projetos NodeJs",
   "main": "./src/server.ts",
+  "engines": {
+    "node": "18.x",
+    "npm": "8.x"
+  },
   "scripts": {
     "start": "node ./build/server.js",
     "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/server.ts",
