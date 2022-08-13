@@ -6,6 +6,7 @@ import { postRouter } from "./routers/postRouter"
 import { amizadeRouter } from "./routers/AmizadeRoute"
 import DataAcess from "./data/DataAcess"
 import { pacienteRouter } from "./routers/PacienteRoute"
+import { AddressInfo } from "net";
 
 /**************************** CONFIG ******************************/
 const app: Express = express()
@@ -20,6 +21,11 @@ app.use('/post', postRouter )
 app.use('/amizade', amizadeRouter )
 app.use('/paciente', pacienteRouter )
 /**************************** SERVER INIT ******************************/
-app.listen(3003, () => {
-   console.log("Server running on port 3003")
-})
+const server = app.listen(process.env.PORT || 3003, () => {
+   if (server) {
+       const address = server.address() as AddressInfo;
+       console.log(`Server is running in http://${address.address}:${address.port}`);
+   } else {
+       console.error(`Failure upon starting server.`);
+   }
+});
