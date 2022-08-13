@@ -9,6 +9,14 @@ export class PacienteDatabase{
         } catch (error: any) {
             return error
         }       
+    }
+
+    public findAll = async ()=>{ 
+        try {
+            return await PacienteRepository.find()
+        } catch (error: any) {
+            return error
+        }       
         
     }
 

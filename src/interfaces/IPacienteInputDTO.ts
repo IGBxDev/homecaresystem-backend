@@ -3,7 +3,6 @@ import { Account } from "../model/AccountModel"
 import { REGION_TYPES } from "../enum/Region"
 
 export interface IPacienteInputDTO {
-    id: string,
     nameComplete: string
     email: string,
     cellphone: string,

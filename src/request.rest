@@ -1,6 +1,29 @@
 POST http://localhost:3003/paciente/create 
 Content-Type: application/json 
 
-{    
-    "nameComplete": "testetttt"
+{
+"nameComplete": "Robson Rodrigues Ribeiro Segundo",
+"cellphone": "(11) 98286-3916",
+"contaBancaria":[{    
+    "tipo": "Conta corrente",
+    "numeroConta": "0735385-5",
+    "agencia": "0444",
+    "banco": "Bradesco",
+    "codigoBanco": "237" }],
+"cpf": "444.444.444-01",
+"email": "email@gmail.com",
+"endereco": [{
+    "cep": "02649-010",
+    "bairro": "Jardim Peri",
+    "numero": "60",
+    "cidade": "São Paulo",
+    "estado": "Sp",
+    "complemento": "casa 5" }],
+"numeroConselho": "054548787",
+"regiao":  "Região Norte"
 }
+
+
+###
+GET http://localhost:3003/paciente/findAll 
+Content-Type: application/json 

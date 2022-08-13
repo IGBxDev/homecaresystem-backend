@@ -6,3 +6,4 @@ export const pacienteRouter = express.Router()
 const pacienteController = new PacienteController()
 
 pacienteRouter.post('/create', pacienteController.create)
+pacienteRouter.get('/findAll', pacienteController.findAll)

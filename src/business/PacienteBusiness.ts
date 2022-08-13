@@ -12,6 +12,16 @@ export class PacienteBusiness{
         }
 
     }
+
+    public findAll = async ()=>{
+        try {
+            const pacienteDatabase = new PacienteDatabase();
+            return await pacienteDatabase.findAll()
+        } catch (error: any ) {
+            return error
+        }
+
+    }
 }
 
 

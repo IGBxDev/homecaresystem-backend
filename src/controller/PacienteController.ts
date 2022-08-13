@@ -11,7 +11,6 @@ export class PacienteController {
         try {
         
             const input: IPacienteInputDTO = {
-                id: generateId(),
                 nameComplete: req.body.nameComplete,
                 cellphone: req.body.cellphone,
                 contaBancaria:[{    
@@ -41,6 +40,17 @@ export class PacienteController {
             res.status(201).send({ message: "PacienteBusiness criado!" });
         }catch (error: any) {
             res.status(400).send(error.message);
+        }
+    }
+
+
+    public findAll = async(req: Request, res:Response)=>{
+        try {
+            const pacienteBusiness = new PacienteBusiness();
+            const data = await pacienteBusiness.findAll();
+            res.status(200).send(data)
+        } catch (error: any) {
+            res.status(200).send(error)
         }
     }
 }
