@@ -31,7 +31,9 @@ export class ProfessionalController {
                     cidade: req.body.endereco[0].cidade as string,
                     estado: req.body.endereco[0].estado as string,
                     complemento: req.body.endereco[0].complemento as string,
-                    endereco: req.body.endereco[0].endereco as string, }],
+                    endereco: req.body.endereco[0].endereco as string,
+                    uf: req.body.endereco[0].uf as string,
+                 }],
                 numeroConselho: req.body.numeroConselho as string,
                 regiao:  { 
                     zonaNorte: req.body.regiao.zonaNorte as boolean, 
@@ -39,7 +41,7 @@ export class ProfessionalController {
                     zonaSul: req.body.regiao.zonaSul as boolean,
                     zonaOeste: req.body.regiao.zonaOeste as boolean
                 },
-                uf: req.body.uf as string,
+               
                 especialidade: req.body.especialidade as string,
                 BloqueiProfissional: req.body.BloqueiProfissional as string
             };

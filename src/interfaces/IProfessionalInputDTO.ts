@@ -11,7 +11,6 @@ export interface IProfessionalInputDTO {
     regiao: { zonaNorte: boolean, zonaLeste: boolean, zonaSul: boolean, zonaOeste: boolean },
     endereco: Address[]
     contaBancaria: Account[],
-    uf: String,
     especialidade: String,
     BloqueiProfissional: String
 }

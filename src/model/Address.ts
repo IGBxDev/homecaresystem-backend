@@ -6,5 +6,6 @@ export type Address = {
     cidade: string,
     estado: string,
     complemento: string,
-    endereco: string
+    endereco: string,
+    uf: String,
 }

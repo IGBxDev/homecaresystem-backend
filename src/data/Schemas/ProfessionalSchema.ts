@@ -19,7 +19,8 @@ const ProfessionalSchema = new mongoose.Schema<IProfessionalInputDTO>({
         cidade: String,
         estado: String,
         complemento: String,
-        endereco: String
+        endereco: String,
+        uf: String,
     }],
     contaBancaria: [{   id: String,
         tipo: String,
@@ -28,7 +29,7 @@ const ProfessionalSchema = new mongoose.Schema<IProfessionalInputDTO>({
         banco: String,
         codigoBanco: String  
     }],
-    uf: String,
+ 
     especialidade: String,
     BloqueiProfissional: String    
 })
