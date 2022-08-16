@@ -18,9 +18,13 @@ Content-Type: application/json
     "numero": "60",
     "cidade": "São Paulo",
     "estado": "Sp",
-    "complemento": "casa 5" }],
+    "complemento": "casa 5",
+    "endereco": "Rua Doutor Araujo de Castro" }],
 "numeroConselho": "054548787",
-"regiao":  "Região Norte"
+"regiao":  { "zonaNorte": true, "zonaSul": false, "zonaLeste": true, "zonaOeste": true},
+"uf": "SP",
+"especialidade": "Fisioterapeutra",
+"BloqueiProfissional": "Sim"
 }
 
 

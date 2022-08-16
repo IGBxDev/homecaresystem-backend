@@ -8,7 +8,10 @@ export interface IProfessionalInputDTO {
     cellphone: string,
     cpf: string,
     numeroConselho: string,
-    regiao: REGION_TYPES,
+    regiao: { zonaNorte: boolean, zonaLeste: boolean, zonaSul: boolean, zonaOeste: boolean },
     endereco: Address[]
-    contaBancaria: Account[]
+    contaBancaria: Account[],
+    uf: String,
+    especialidade: String,
+    BloqueiProfissional: String
 }

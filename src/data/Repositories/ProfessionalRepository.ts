@@ -1,7 +1,7 @@
 import ProfessionalSchema from "../Schemas/ProfessionalSchema";
-import IProfessionalModel from "../../model/interfaces/IProfessionalModel";
 import mongoose from "mongoose";
+import { IProfessionalInputDTO } from "../../interfaces/IProfessionalInputDTO";
 
-const ProfessionalRepository = mongoose.model<IProfessionalModel>("Professional", ProfessionalSchema, "Professional")
+const ProfessionalRepository = mongoose.model<IProfessionalInputDTO>("Professional", ProfessionalSchema, "Professional")
 
 export default ProfessionalRepository;

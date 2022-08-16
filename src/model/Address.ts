@@ -4,6 +4,7 @@ export type Address = {
     bairro: string,
     numero: string,
     cidade: string,
-    estado: string
-    complemento: string
+    estado: string,
+    complemento: string,
+    endereco: string
 }

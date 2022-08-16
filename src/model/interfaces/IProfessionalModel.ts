@@ -4,15 +4,17 @@ import { Account } from "../AccountModel";
 import { Address } from "../Address";
 
 interface IProfessionalModel extends mongoose.Document{
-    id: string,
-    nameComplete: string,
+    nameComplete: string
     email: string,
-    telefone: string,
+    cellphone: string,
     cpf: string,
-    numeroConsolelho: string,
-    regiao: REGION_TYPES,
-    endereco: Address[],
-    dadosBancario: Account[]
+    numeroConselho: string,
+    regiao: { zonaNorte: boolean, zonaLeste: boolean, zonaSul: boolean, zonaOeste: boolean },
+    endereco: Address[]
+    contaBancaria: Account[],
+    uf: String,
+    especialidade: String,
+    BloqueiProfissional: String
 }
 
 export = IProfessionalModel

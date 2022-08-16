@@ -1,4 +1,5 @@
 import { IProfessionalInputDTO } from "../interfaces/IProfessionalInputDTO";
+import IProfessionalModel from "../model/interfaces/IProfessionalModel";
 import ProfessionalRepository from "./Repositories/ProfessionalRepository";
 
 export class ProfessionalDatabase{

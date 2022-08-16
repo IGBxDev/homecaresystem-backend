@@ -4,6 +4,7 @@ import { IProfessionalInputDTO } from "../interfaces/IProfessionalInputDTO";
 import  {generateId}  from "../Services/generateId";
 import { ACCOUNT_TYPES } from "../enum/Account";
 import { REGION_TYPES } from "../enum/Region";
+import IProfessionalModel from "../model/interfaces/IProfessionalModel";
 
 export class ProfessionalController {
   
@@ -11,27 +12,36 @@ export class ProfessionalController {
         try {
         
             const input: IProfessionalInputDTO = {
-                nameComplete: req.body.nameComplete,
-                cellphone: req.body.cellphone,
+                nameComplete: req.body.nameComplete as string,
+                cellphone: req.body.cellphone as string,
                 contaBancaria:[{    
-                    id: generateId(),
+                    id: generateId() as string,
                     tipo: ACCOUNT_TYPES.CONTA_CORRENTE,
-                    numeroConta: req.body.contaBancaria[0].numeroConta,
-                    agencia: req.body.contaBancaria[0].agencia,
-                    banco: req.body.contaBancaria[0].banco,
-                    codigoBanco: req.body.contaBancaria[0].codigoBanco}],
-                cpf: req.body.cpf,
-                email: req.body.email,
+                    numeroConta: req.body.contaBancaria[0].numeroConta as string,
+                    agencia: req.body.contaBancaria[0].agencia as string,
+                    banco: req.body.contaBancaria[0].banco as string,
+                    codigoBanco: req.body.contaBancaria[0].codigoBanco as string}],
+                cpf: req.body.cpf as string,
+                email: req.body.email as string,
                 endereco: [{
-                    id: generateId(),
-                    cep: req.body.endereco[0].cep,
-                    bairro: req.body.endereco[0].bairro,
-                    numero: req.body.endereco[0].numero,
-                    cidade: req.body.endereco[0].cidade,
-                    estado: req.body.endereco[0].estado,
-                    complemento: req.body.endereco[0].complemento }],
-                numeroConselho: req.body.numeroConselho,
-                regiao:  REGION_TYPES.NORTE
+                    id: generateId() as string,
+                    cep: req.body.endereco[0].cep as string,
+                    bairro: req.body.endereco[0].bairro as string,
+                    numero: req.body.endereco[0].numero as string,
+                    cidade: req.body.endereco[0].cidade as string,
+                    estado: req.body.endereco[0].estado as string,
+                    complemento: req.body.endereco[0].complemento as string,
+                    endereco: req.body.endereco[0].endereco as string, }],
+                numeroConselho: req.body.numeroConselho as string,
+                regiao:  { 
+                    zonaNorte: req.body.regiao.zonaNorte as boolean, 
+                    zonaLeste: req.body.regiao.zonaLeste as boolean,
+                    zonaSul: req.body.regiao.zonaSul as boolean,
+                    zonaOeste: req.body.regiao.zonaOeste as boolean
+                },
+                uf: req.body.uf as string,
+                especialidade: req.body.especialidade as string,
+                BloqueiProfissional: req.body.BloqueiProfissional as string
             };
 
             const pacienteBusiness = new ProfessionalBusiness();

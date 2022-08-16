@@ -1,5 +1,6 @@
 import { ProfessionalDatabase } from "../data/ProfessionalDatabase"
 import { IProfessionalInputDTO } from "../interfaces/IProfessionalInputDTO";
+import IProfessionalModel from "../model/interfaces/IProfessionalModel";
 
 export class ProfessionalBusiness{
 
