@@ -2,7 +2,7 @@ import { REGION_TYPES } from "../enum/Region"
 import { Account } from "./AccountModel"
 import { Address } from "./Address"
 
-export type PacienteModel={
+export type ProfessionalModel={
     id: string,
     nomeCompleto: string,
     email: string,

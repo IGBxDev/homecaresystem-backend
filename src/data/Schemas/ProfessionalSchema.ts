@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-import IPacienteModel from "../../model/interfaces/IPacienteModel";
+import IProfessionalModel from "../../model/interfaces/IProfessionalModel";
 import { Account } from "../../model/AccountModel";
 import { Address } from "../../model/Address";
 
-const PacienteSchema = new mongoose.Schema({
+const ProfessionalSchema = new mongoose.Schema({
     nameComplete: String,
     email: String,
     cellphone: String,
@@ -14,4 +14,4 @@ const PacienteSchema = new mongoose.Schema({
     contaBancaria:[]    
 })
 
-export default PacienteSchema
+export default ProfessionalSchema

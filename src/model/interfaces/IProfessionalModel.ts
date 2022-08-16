@@ -3,7 +3,7 @@ import { REGION_TYPES } from "../../enum/Region";
 import { Account } from "../AccountModel";
 import { Address } from "../Address";
 
-interface IPacienteModel extends mongoose.Document{
+interface IProfessionalModel extends mongoose.Document{
     id: string,
     nameComplete: string,
     email: string,
@@ -15,4 +15,4 @@ interface IPacienteModel extends mongoose.Document{
     dadosBancario: Account[]
 }
 
-export = IPacienteModel
+export = IProfessionalModel

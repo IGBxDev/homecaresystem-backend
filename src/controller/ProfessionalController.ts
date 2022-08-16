@@ -1,16 +1,16 @@
 import { Request, Response } from "express"
-import { PacienteBusiness } from "../business/PacienteBusiness";
-import { IPacienteInputDTO } from "../interfaces/IPacienteInputDTO";
+import { ProfessionalBusiness } from "../business/ProfessionalBusiness";
+import { IProfessionalInputDTO } from "../interfaces/IProfessionalInputDTO";
 import  {generateId}  from "../Services/generateId";
 import { ACCOUNT_TYPES } from "../enum/Account";
 import { REGION_TYPES } from "../enum/Region";
 
-export class PacienteController {
+export class ProfessionalController {
   
     public create = async (req: Request, res: Response) => {
         try {
         
-            const input: IPacienteInputDTO = {
+            const input: IProfessionalInputDTO = {
                 nameComplete: req.body.nameComplete,
                 cellphone: req.body.cellphone,
                 contaBancaria:[{    
@@ -34,7 +34,7 @@ export class PacienteController {
                 regiao:  REGION_TYPES.NORTE
             };
 
-            const pacienteBusiness = new PacienteBusiness();
+            const pacienteBusiness = new ProfessionalBusiness();
             await pacienteBusiness.create(input);
 
             res.status(201).send({ message: "PacienteBusiness criado!" });
@@ -46,7 +46,7 @@ export class PacienteController {
 
     public findAll = async(req: Request, res:Response)=>{
         try {
-            const pacienteBusiness = new PacienteBusiness();
+            const pacienteBusiness = new ProfessionalBusiness();
             const data = await pacienteBusiness.findAll();
             res.status(200).send(data)
         } catch (error: any) {

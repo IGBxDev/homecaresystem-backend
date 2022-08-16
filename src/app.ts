@@ -5,7 +5,7 @@ import { userRouter } from "./routers/userRouter"
 import { postRouter } from "./routers/postRouter"
 import { amizadeRouter } from "./routers/AmizadeRoute"
 import DataAcess from "./data/DataAcess"
-import { pacienteRouter } from "./routers/PacienteRoute"
+import { professionalRouter } from "./routers/ProfessionalRoute"
 
 
 
@@ -23,6 +23,6 @@ DataAcess.connect()
 app.use('/user', userRouter)
 app.use('/post', postRouter )
 app.use('/amizade', amizadeRouter )
-app.use('/paciente', pacienteRouter )
+app.use('/professional', professionalRouter )
 
 export default app

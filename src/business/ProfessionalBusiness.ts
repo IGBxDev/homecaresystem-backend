@@ -1,0 +1,27 @@
+import { ProfessionalDatabase } from "../data/ProfessionalDatabase"
+import { IProfessionalInputDTO } from "../interfaces/IProfessionalInputDTO";
+
+export class ProfessionalBusiness{
+
+    public create = async (input: IProfessionalInputDTO)=>{
+        try {
+            const professionalDatabase = new ProfessionalDatabase();
+            return await professionalDatabase.create(input)
+        } catch (error: any ) {
+            return error
+        }
+
+    }
+
+    public findAll = async ()=>{
+        try {
+            const professionalDatabase = new ProfessionalDatabase();
+            return await professionalDatabase.findAll()
+        } catch (error: any ) {
+            return error
+        }
+
+    }
+}
+
+

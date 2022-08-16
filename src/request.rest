@@ -1,4 +1,4 @@
-POST http://localhost:3003/paciente/create 
+POST http://localhost:3003/professional/create 
 Content-Type: application/json 
 
 {
@@ -25,5 +25,5 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:3003/paciente/findAll 
+GET http://localhost:3003/professional/findAll 
 Content-Type: application/json 

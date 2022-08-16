@@ -2,7 +2,7 @@ import { Address } from "../model/Address"
 import { Account } from "../model/AccountModel"
 import { REGION_TYPES } from "../enum/Region"
 
-export interface IPacienteInputDTO {
+export interface IProfessionalInputDTO {
     nameComplete: string
     email: string,
     cellphone: string,
