@@ -3,6 +3,8 @@ import cors from 'cors'
 import DataAcess from "./data/DataAcess"
 import { professionalRouter } from "./routers/ProfessionalRoute"
 import { patientRouter } from './routers/PatientRoute'
+import { healthInsuranceRouter } from './routers/HealthIncuranceRoute'
+import { frequencyRouter } from './routers/FrequencyRoute'
 
 
 
@@ -18,5 +20,7 @@ DataAcess.connect()
 /**************************** ENDPOINTS ******************************/
 app.use('/professional', professionalRouter )
 app.use('/patient', patientRouter )
+app.use('/healthIncurance', healthInsuranceRouter )
+app.use('/frequency', frequencyRouter )
 
 export default app
