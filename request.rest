@@ -1,6 +1,6 @@
 
 ###
-POST http://localhost:3003/paciente/create
+POST http://localhost:3003/professional/create
 Content-Type: application/json
 
 {
@@ -26,5 +26,31 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3003/paciente/findAll
+GET http://localhost:3003/professional/findAll
 Content-Type: application/json
+
+###
+GET http://localhost:3003/patient/findAll
+Content-Type: application/json
+
+###
+POST http://localhost:3003/patient/create
+Content-Type: application/json
+
+{
+    "nameComplete": "Robson Rodrigues Ribeiro",
+    "cellphone  ": "(11) 98286-3916",
+    "email": "projetos.r@hotmail.com",
+    "address": [{
+        "cep": "02649010",
+        "bairro": "Jardim Peri",
+        "numero": "60",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "complemento": "Casa 3",
+        "uf" : "SP",
+        "endereco": "Rua a"
+    }],
+    "information": "dd"
+    
+}

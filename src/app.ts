@@ -1,11 +1,8 @@
 import express from 'express'
 import cors from 'cors'
-
-import { userRouter } from "./routers/userRouter"
-import { postRouter } from "./routers/postRouter"
-import { amizadeRouter } from "./routers/AmizadeRoute"
 import DataAcess from "./data/DataAcess"
 import { professionalRouter } from "./routers/ProfessionalRoute"
+import { patientRouter } from './routers/PatientRoute'
 
 
 
@@ -16,13 +13,10 @@ app.use(cors({origin: "*", credentials: true})) //define que qualquer url pode a
 
 
 /**************************** CONNECTION ******************************/
-
 DataAcess.connect()
 
 /**************************** ENDPOINTS ******************************/
-app.use('/user', userRouter)
-app.use('/post', postRouter )
-app.use('/amizade', amizadeRouter )
 app.use('/professional', professionalRouter )
+app.use('/patient', patientRouter )
 
 export default app

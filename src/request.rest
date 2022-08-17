@@ -2,7 +2,7 @@ POST http://localhost:3003/professional/create
 Content-Type: application/json 
 
 {
-"nameComplete": "Robson Rodrigues Ribeiro Segundo",
+"nameComplete": "Ricardo",
 "cellphone": "(11) 98286-3916",
 "contaBancaria":[{    
     "tipo": "Conta corrente",
