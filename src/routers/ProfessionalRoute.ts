@@ -7,3 +7,4 @@ const professionalController = new ProfessionalController()
 
 professionalRouter.post('/create', professionalController.create)
 professionalRouter.get('/findAll', professionalController.findAll)
+professionalRouter.delete('/findByIdAndDelete', professionalController.deleteById)

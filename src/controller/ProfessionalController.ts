@@ -65,4 +65,22 @@ export class ProfessionalController {
             res.status(200).send(error)
         }
     }
+
+
+    public deleteById = async (req: Request, res: Response ) =>{
+        const { professionalDelete } = req.body
+        try {
+    
+            if(professionalDelete.length === 0){
+                throw new Error("Nenhum registro informado")
+            }
+    
+            const professionalBusiness = new ProfessionalBusiness()
+            const result = await professionalBusiness.deleteById(professionalDelete)
+
+            res.status(200).end()
+        } catch (error: any ) {
+            res.status(500).send(error)
+        }
+    }
 }

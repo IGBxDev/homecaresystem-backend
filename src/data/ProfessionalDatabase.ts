@@ -17,8 +17,15 @@ export class ProfessionalDatabase{
             return await ProfessionalRepository.find()
         } catch (error: any) {
             return error
-        }       
-        
+        }
+    }
+
+    public deleteById = async (id: string)=>{ 
+        try {
+            return await ProfessionalRepository.findByIdAndDelete(id)
+        } catch (error: any) {
+            return error
+        }
     }
 
 }

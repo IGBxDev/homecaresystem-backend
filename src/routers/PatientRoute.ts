@@ -7,3 +7,4 @@ const patientController = new PatientController()
 
 patientRouter.post('/create', patientController.create)
 patientRouter.get('/findAll', patientController.findAll)
+patientRouter.delete('/findByIdAndDelete', patientController.deleteById)

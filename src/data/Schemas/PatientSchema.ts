@@ -15,7 +15,7 @@ const PatientSchema = new mongoose.Schema<IPatientInputDTO>({
         endereco: String,
         uf: String
     }],
-    information: String    
+    hd: String    
 })
 
 export default PatientSchema

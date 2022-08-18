@@ -5,5 +5,5 @@ export interface IPatientInputDTO {
     email: string,
     cellphone: string,
     address: Address[]
-    information: String
+    hd: String
 }

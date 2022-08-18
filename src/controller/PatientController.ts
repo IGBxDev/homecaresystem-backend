@@ -23,7 +23,7 @@ export class PatientController {
                     endereco: req.body.address[0].endereco as string,
                     uf: req.body.address[0].uf as string,
                  }],
-                 information: req.body.information
+                 hd: req.body.hd
             };
 
             const patientBusiness = new PatientBusiness();
@@ -43,6 +43,23 @@ export class PatientController {
             res.status(200).send(data)
         } catch (error: any) {
             res.status(200).send(error)
+        }
+    }
+
+    public deleteById = async (req: Request, res: Response ) =>{
+        const { patientDelete } = req.body
+        try {
+    
+            if(patientDelete.length === 0){
+                throw new Error("Nenhum registro informado")
+            }
+    
+            const patientBusiness = new PatientBusiness();
+            const result = await patientBusiness.deleteById(patientDelete)
+
+            res.status(200).end()
+        } catch (error: any ) {
+            res.status(500).send(error)
         }
     }
 }

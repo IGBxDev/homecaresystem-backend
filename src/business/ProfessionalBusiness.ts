@@ -21,6 +21,19 @@ export class ProfessionalBusiness{
         } catch (error: any ) {
             return error
         }
+    }
+
+    public deleteById = async (professionalDelete: [string])=>{
+        try {
+            const professionalDatabase = new ProfessionalDatabase();
+            return await professionalDelete.map((id) => 
+                {                                
+                    professionalDatabase.deleteById(id)
+                }
+            )
+        } catch (error) {
+            return error
+        }
 
     }
 }

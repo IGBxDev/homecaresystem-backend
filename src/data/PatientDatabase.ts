@@ -19,4 +19,13 @@ export class PatientDatabase{
         }
     }
 
+
+    public deleteById = async (id: string)=>{ 
+        try {
+            return await PatientRepository.findByIdAndDelete(id)
+        } catch (error: any) {
+            return error
+        }
+    }
+
 }

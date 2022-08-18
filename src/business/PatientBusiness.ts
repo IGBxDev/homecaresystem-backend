@@ -20,6 +20,21 @@ export class PatientBusiness{
         } catch (error: any ) {
             return error
         }
+    }
+
+
+    
+    public deleteById = async (patientDelete: [string])=>{
+        try {
+            const patientDatabase = new PatientDatabase();
+            return await patientDelete.map((id) => 
+                {                                
+                    patientDatabase.deleteById(id)
+                }
+            )
+        } catch (error) {
+            return error
+        }
 
     }
 }
