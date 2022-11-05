@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import { REGION_TYPES } from "../../enum/Region";
 import { Account } from "../AccountModel";
 import { Address } from "../Address";
+import { StatusEnum } from "../../data/Schemas/enum/StatusEnum";
 
 interface IProfessionalModel extends mongoose.Document{
     nameComplete: string
@@ -14,7 +15,8 @@ interface IProfessionalModel extends mongoose.Document{
     contaBancaria: Account[],
     uf: String,
     especialidade: String,
-    BloqueiProfissional: String
+    BloqueiProfissional: String,
+    status: StatusEnum
 }
 
 export = IProfessionalModel

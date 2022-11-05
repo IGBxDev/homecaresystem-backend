@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { Account } from "./AccountModel";  
 import { Address } from "./Address";
+import { StatusEnum } from "../data/Schemas/enum/StatusEnum";
 
 
 interface ProfessionalModel extends mongoose.Document{
@@ -15,6 +16,7 @@ interface ProfessionalModel extends mongoose.Document{
     uf: String,
     especialidade: String,
     BloqueiProfissional: String
+    status: StatusEnum
 }
 
 export = ProfessionalModel

@@ -6,8 +6,6 @@ import { patientRouter } from './routers/PatientRoute'
 import { healthInsuranceRouter } from './routers/HealthIncuranceRoute'
 import { frequencyRouter } from './routers/FrequencyRoute'
 
-
-
 /**************************** CONFIG ******************************/
 const app = express()
 app.use(express.json())

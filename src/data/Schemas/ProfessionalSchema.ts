@@ -4,6 +4,7 @@ import { Account } from "../../model/AccountModel";
 import { Address } from "../../model/Address";
 import { ACCOUNT_TYPES } from "../../enum/Account";
 import { IProfessionalInputDTO } from "../../interfaces/IProfessionalInputDTO";
+import { StatusEnum } from "./enum/StatusEnum";
 
 const ProfessionalSchema = new mongoose.Schema<IProfessionalInputDTO>({
     nameComplete: String,
@@ -31,7 +32,12 @@ const ProfessionalSchema = new mongoose.Schema<IProfessionalInputDTO>({
     }],
  
     especialidade: String,
-    BloqueiProfissional: String    
+    bloqueiProfissional: String,
+    status: {
+        type: String,
+        enum: Object.values(StatusEnum),
+        default: StatusEnum.ATIVO
+    }    
 })
 
 export default ProfessionalSchema

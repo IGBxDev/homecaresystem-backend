@@ -5,12 +5,12 @@ import  {generateId}  from "../Services/generateId";
 import { ACCOUNT_TYPES } from "../enum/Account";
 import { REGION_TYPES } from "../enum/Region";
 import IProfessionalModel from "../model/interfaces/IProfessionalModel";
+import { StatusEnum } from "../data/Schemas/enum/StatusEnum";
 
 export class ProfessionalController {
   
     public create = async (req: Request, res: Response) => {
-        try {
-        
+        try {        
             const input: IProfessionalInputDTO = {
                 nameComplete: req.body.nameComplete as string,
                 cellphone: req.body.cellphone as string,
@@ -40,10 +40,10 @@ export class ProfessionalController {
                     zonaLeste: req.body.regiao.zonaLeste as boolean,
                     zonaSul: req.body.regiao.zonaSul as boolean,
                     zonaOeste: req.body.regiao.zonaOeste as boolean
-                },
-               
+                },               
                 especialidade: req.body.especialidade as string,
-                BloqueiProfissional: req.body.BloqueiProfissional as string
+                bloqueiProfissional: req.body.BloqueiProfissional as string,
+                status: StatusEnum.ATIVO
             };
 
             const pacienteBusiness = new ProfessionalBusiness();
@@ -54,7 +54,6 @@ export class ProfessionalController {
             res.status(400).send(error.message);
         }
     }
-
 
     public findAll = async(req: Request, res:Response)=>{
         try {
@@ -76,7 +75,7 @@ export class ProfessionalController {
             }
     
             const professionalBusiness = new ProfessionalBusiness()
-            const result = await professionalBusiness.deleteById(professionalDelete)
+            await professionalBusiness.deleteById(professionalDelete)
 
             res.status(200).end()
         } catch (error: any ) {

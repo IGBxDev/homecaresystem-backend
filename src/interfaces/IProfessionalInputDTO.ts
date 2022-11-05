@@ -1,6 +1,7 @@
 import { Address } from "../model/Address"
 import { Account } from "../model/AccountModel"
 import { REGION_TYPES } from "../enum/Region"
+import { StatusEnum } from "../data/Schemas/enum/StatusEnum"
 
 export interface IProfessionalInputDTO {
     nameComplete: string
@@ -12,5 +13,6 @@ export interface IProfessionalInputDTO {
     endereco: Address[]
     contaBancaria: Account[],
     especialidade: String,
-    BloqueiProfissional: String
+    bloqueiProfissional: String,
+    status: StatusEnum
 }
