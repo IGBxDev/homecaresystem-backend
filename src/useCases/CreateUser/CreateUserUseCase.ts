@@ -28,7 +28,7 @@ export class CreateUserUseCase {
             },
             from: {
                 name: "Equipe do meu app",
-                email: "equipe@meuapp.com",
+                email: "donnie.torphy51@ethereal.email",
             },
             subject: "Seja bem-vindo a plataforma",
             body: "<p>Você já pode fazer login em nossa plataforma </p>"

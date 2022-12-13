@@ -1,13 +1,13 @@
 import { MailTrapMailProvider } from "../../providers/implementations/MailTrapProvider";
-import { MongoDBUserRepository } from "../../repositories/implementations/MongoDBUserRepository";
+import { UserRepository } from "../../repositories/implementations/UserRepository";
 import { CreateUserController } from "./CreateUserController";
 import { CreateUserUseCase } from "./CreateUserUseCase";
 
-const mailtrapMailProvider = new MailTrapMailProvider
-const mongooDBUsersRepository = new MongoDBUserRepository
+const mailtrapMailProvider = new MailTrapMailProvider()
+const userRepository = new UserRepository()
 
 const createUserUseCase = new CreateUserUseCase(
-    mongooDBUsersRepository,
+    userRepository,
     mailtrapMailProvider
 )
 

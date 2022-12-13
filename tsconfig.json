@@ -6,9 +6,11 @@
     "esModuleInterop": true,  
     "skipLibCheck": true ,           
     "forceConsistentCasingInFileNames": true, 
-    "strict": true,
+    "strict": false,
     "strictPropertyInitialization": false,
-    "useUnknownInCatchVariables": false
+    "useUnknownInCatchVariables": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
   },
   "include": [
     "src/**/*.ts"

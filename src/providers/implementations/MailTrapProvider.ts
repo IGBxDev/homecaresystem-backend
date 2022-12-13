@@ -4,14 +4,14 @@ import Mail from "nodemailer/lib/mailer";
 
 export class MailTrapMailProvider implements IMailProvider{
     private transporter: Mail
-    
+
     constructor(){
         this.transporter = nodemailer.createTransport({
-            host: "smtp.mailtrap.io",
-            port: 2525,
+            host: "smtp.ethereal.email",
+            port: 587,
             auth:{
-                user: "b46da5240e73cc",
-                pass: "84b46267394ac9"
+                user: "donnie.torphy51@ethereal.email",
+                pass: "Gdnt6XQE1pmuyAfYEx"
             }
         })
     }
