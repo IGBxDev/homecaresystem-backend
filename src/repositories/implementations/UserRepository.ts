@@ -1,6 +1,6 @@
 import { User } from "../../entities/User";
 import { IUsersRepository } from "../IUsersRepository";
-import { Repository } from "typeorm";
+import { ObjectID, Repository } from "typeorm";
 import { IDataSourse } from "../../dataBase/IDataSourse";
 
 export class UserRepository implements IUsersRepository{
@@ -13,7 +13,7 @@ export class UserRepository implements IUsersRepository{
     }
 
     async deleteById(id: string): Promise<void> {
-        this.repository.findBy({ id: id })
+        await this.repository.update(id,{ isActive: false })
     }
 
     async initialize(){
@@ -27,6 +27,6 @@ export class UserRepository implements IUsersRepository{
     }
     
     async save(user: User): Promise<void> {
-        this.repository.save(user)        
+        this.repository.insert(user)        
     }
 }

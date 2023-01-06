@@ -3,7 +3,6 @@ import { DataSource } from 'typeorm'
 
 export const AppDataSource = new DataSource({
     type: "mongodb",
-    // url: "mongodb+srv://adminLcr:vlTU12zIUG6sf2x1@lcr.cu1ggsk.mongodb.net/lcr-dev",
     url: "mongodb+srv://homecaresystem:123asyst100@homecaresystem.dh0cd.mongodb.net/cashflow",
     useNewUrlParser: true,
     useUnifiedTopology: true,

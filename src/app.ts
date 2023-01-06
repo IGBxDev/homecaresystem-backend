@@ -2,11 +2,13 @@ import express from 'express'
 import { router } from './routes'
 import cors from 'cors'
 import 'reflect-metadata'
+
 class App{
+
     public express: express.Application
 
     constructor(){
-        this.express =  express()        
+        this.express = express()        
         this.middleware()
         this.routes()
     }

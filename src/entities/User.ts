@@ -1,11 +1,11 @@
 import { uuid } from "uuidv4";
 import { Entity, Column, ObjectIdColumn } from 'typeorm'
 
-@Entity("User")
+@Entity("Users")
 export class User {
     
     @ObjectIdColumn()
-    public readonly id: string;
+    public readonly _id: string;
 
     @Column()
     public name: string;
@@ -16,11 +16,14 @@ export class User {
     @Column()
     public password: string;
 
-    constructor(props: Omit<User, 'id'>, id?: string){
+    @Column('boolean', {default: true , nullable: false})
+    public isActive: boolean;
+    
+    constructor(props: Omit<User, '_id' | 'isActive'>, _id?: string, isActive?: boolean){
         Object.assign(this, props)
 
-        if(id){
-            this.id = uuid()
+        if(!_id){
+            this.isActive = true
         }
     }
 }
