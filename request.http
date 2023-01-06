@@ -11,3 +11,8 @@ Content-Type: application/json
 DELETE http://localhost:3333/users/63b6baba88e76428f8d0c68d HTTP/1.1
 Content-Type: application/json
 
+
+###
+GET http://localhost:3333/transaction/ HTTP/1.1
+Content-Type: application/json
+
