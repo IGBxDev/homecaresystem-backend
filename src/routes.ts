@@ -18,4 +18,10 @@ router.get('/transaction', (request, response) =>{
     return getTransactionController.handle(request, response)
 })
 
+router.get('/', (request, response)=>{
+    response.status(200).json({
+        message: 'Sucesso'
+    })
+})
+
 export { router }
